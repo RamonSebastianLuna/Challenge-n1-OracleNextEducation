@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/Logica.js"></script>
     <link rel="stylesheet" href="css/Normalize-v8.0.1.css">
     <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
@@ -16,36 +17,38 @@
     <div class="logo">
         <img src="images/Alura.svg" alt="logo Alura" class="img1">
     </div>
-    <form>
-        <textarea id="ingresaTexto" class="ingresaTexto" placeholder="Ingrese el texto aquí"></textarea>
-        <div class="frame_1">
-            <img src="images/Exclamación.svg" alt="Exclamación" class="img2">
-            <p>Sólo letras minúsculas y sin acentos</p>        
-        </div>
-        <div class="container_button">
-            <button type="button" onclick="validarYEncriptar()" id="buttonEncriptar">Encriptar</button>
-            <button type="button" onclick="validarYDesencriptar()" id="buttonDesencriptar">Desencriptar</button>
-        </div>
-    </form>
-    <div class="rectangle_1" id="rectangulo1">
-        <div class="muñeco">
-            <img src="images/Muñeco.svg" alt="muñeco" class="img3">    
-        </div>
-        <div class="frame_5">
-            <div class="p_1">
-                <p>Ningún mensaje fué encontrado</p>
+    <div class="contenedor">
+        <form>
+            <textarea id="ingresaTexto" class="ingresaTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="frame_1">
+                <img src="images/Exclamación.svg" alt="Exclamación" class="img2">
+                <p>Sólo letras minúsculas y sin acentos</p>        
             </div>
-            <div class="p_2">
-                <p>Ingresa el texto que quieres encriptar o desencriptar</p>
+            <div class="container_button">
+                <button type="button" onclick="validarYEncriptar()" id="buttonEncriptar">Encriptar</button>
+                <button type="button" onclick="validarYDesencriptar()" id="buttonDesencriptar">Desencriptar</button>
+            </div>
+        </form>
+        <div class="rectangle_1" id="rectangulo1">
+            <div class="muñeco">
+                <img src="images/Muñeco.svg" alt="muñeco" class="img3">    
+            </div>
+            <div class="frame_5">
+                <div class="p_1">
+                    <p>Ningún mensaje fué encontrado</p>
+                </div>
+                <div class="p_2">
+                    <p>Ingresa el texto que quieres encriptar o desencriptar</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="rectangle_2" id="rectangulo2">
-        <div class="contenedor_p">
-           <p id="parrafo"></p>
-        </div>
-        <div>
-            <button type="button" onclick="copiarAlPortapapeles()" id="buttonCopiar">Copiar</button>
+        <div class="rectangle_2" id="rectangulo2">
+            <div class="contenedor_p">
+            <p id="parrafo"></p>
+            </div>
+            <div>
+                <button type="button" onclick="copiarAlPortapapeles()" id="buttonCopiar">Copiar</button>
+            </div>
         </div>
     </div>
     <footer>

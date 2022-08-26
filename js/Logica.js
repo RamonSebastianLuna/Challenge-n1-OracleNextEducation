@@ -89,7 +89,7 @@ function validarYEncriptar(){
 
     if (cadena=="") {
         document.getElementById("rectangulo2").style.display = "none";
-        document.getElementById("rectangulo1").style.display = "inline-block";
+        document.getElementById("rectangulo1").style.display = "flex";
     } else if (validarTextoIngresado(cadena) == true){
         document.getElementById("rectangulo1").style.display = "none";
         document.getElementById("rectangulo2").style.display = "inline-block";
@@ -105,7 +105,7 @@ function validarYDesencriptar(){
 
     if (cadena=="") {
         document.getElementById("rectangulo2").style.display = "none";
-        document.getElementById("rectangulo1").style.display = "inline-block";
+        document.getElementById("rectangulo1").style.display = "flex";
     } else if (validarTextoIngresado(cadena) == true){
         document.getElementById("rectangulo1").style.display = "none";
         document.getElementById("rectangulo2").style.display = "inline-block";
